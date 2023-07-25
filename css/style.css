@@ -264,7 +264,7 @@ nav a:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: url('../../images/plumeria.png') !important;
+    background-image: url("https://github.com/DhayanandhS/pf/blob/main/images/plumeria.png");
     background-position: 50%;
     background-repeat: no-repeat;
 }
