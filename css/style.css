@@ -228,7 +228,7 @@ nav a:hover{
     border-bottom: 5px solid white;
     /*border: 5px solid white;*/
     margin-top: 10px;
-    background-image: url('../../images/monstera.png') !important;
+    background-image: url("https://raw.githubusercontent.com/DhayanandhS/pf/main/images/monstera.png");
     background-repeat: no-repeat;
     background-position: center;
 }
