@@ -1,0 +1,475 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+}
+/* styles of navigation bar */
+nav{
+    background-color: black;
+    font-size: medium;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-container{
+    font-size: 40px;
+    padding: 20px;
+    font-family: 'Pirata One', cursive;
+}
+
+nav a:hover{
+    color: hotpink;
+}
+
+.getintouch:hover{
+    border: 2px solid hotpink;
+    padding: 5px;
+    color: black;
+    background-color: hotpink;
+}
+
+
+.menu-line{
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.menubar-container{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media all and (max-width: 500px){
+    body{
+        width: 100%;
+    }
+    /* styles of navigation bar */
+    nav{
+        flex-direction: column;
+    }
+
+    nav li{
+        display: block;
+    }
+
+    ul{
+        text-align: center;
+        padding: 0px 0px 0px 50px;
+        display: none;
+    }
+
+    .logo-container{
+        align-self: flex-start;
+        margin: 5px 0px 0px 30px;
+    }
+
+    .menubar-container{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        transition: all 2s;
+    }
+
+    .showmenu{
+        display: block;
+    }
+    /* styles of div1 [bird,name]*/
+    
+    .div1-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    } 
+    .div2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .div2-text{
+        text-align: center;
+        padding: 0px 10px 0px 10px;
+    }
+    .div2-text p{
+        width: 300px !important;
+        height: 150px !important;
+    }
+    .div4{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .div4-left{
+        margin-bottom: 30px;
+    }
+    .div4-right{
+        margin-top: 30px;
+    }
+    
+    .div6{
+        margin: 10px 5%;
+    }
+    /*
+
+    .div7 img{
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    */
+    .footer-link{
+        padding: 1px;
+    }
+
+    .see-more-container{
+        margin: 0px 10% 0px !important;
+    }
+
+    .resume-container{
+        margin: 25px 10% 10px !important;
+    }
+
+    .experience{
+        margin: 0px !important;
+    }
+
+    .experience h2{
+        font-size: 50px !important;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .form-container img{
+        height: 150px;
+        width: 150px;
+        margin: 50px 0px 0px 100px;
+        
+    }
+
+}
+
+@media all and (max-width: 700px){
+    .div4-left{
+        height: 420px !important;
+    }
+    .div4-right{
+        height: 420px !important;
+    }
+}
+
+.div1-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div1-text{
+    color: white;
+    text-align: center;
+    
+}
+
+.div1-image{
+    margin: 40px 0px 10px;
+}
+
+.div1-text h1{
+    color: hotpink;
+    font-family: 'Pirata One', cursive;
+    font-size: 60px;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+.div1-text h2{
+    font-family: 'Pirata One', cursive;
+    color: rgb(114, 135, 254);
+    margin-top: 0px;
+}
+
+.div1-text h3{
+    margin-bottom: 0px;
+}
+ 
+.div2-image img{
+    height: 250px;
+    width: 250px; 
+    padding-bottom: 0px;
+    border-bottom: 5px solid white;
+    /*border: 5px solid white;*/
+    margin-top: 10px;
+    background-image: url('/images/monstera.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    margin-top: 80px;
+}
+
+.div2-text{
+    width: 500px;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.div3{
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+.div3 h2{
+    margin: 0px auto;
+
+}
+
+.div4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url('/images/plumeria.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.div4-left{
+    margin: 20px 30px 20px 20px;
+    height: 350px;
+    width: 400px;
+    padding: 5px;
+    border: 5px solid white;
+    background-color: black;
+}
+
+
+.div4-right{
+    margin: 20px 20px 20px 50px;
+    height: 350px;
+    width: 400px;
+    padding: 5px;
+    border: 5px solid white;
+    background-color: black;
+
+}
+
+.div4 a{
+    color: hotpink;
+    text-decoration: none;
+}
+
+.div4-left p{
+    margin: 5px;
+}
+
+.see-more{
+    margin: 5px;
+
+}
+.div4-right p{
+    margin: 5px;
+}
+
+.div4-titles{
+    color: rgb(114, 135, 254);
+}
+
+.div5{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.div5 h2{
+    color: white;
+}
+
+.div6{
+    margin: 10px 20%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+hr{
+    color: white;
+    width: 50%;
+    border: solid; 
+}
+/*
+.div7{
+    display: flex;
+    justify-content: center;
+}
+
+.div7 img{
+    height: 170px;
+    width: 170px;
+}
+*/
+.div7{
+    text-align: center;
+    margin: 20px;
+}
+
+.footer-link{
+    padding: 3px;
+}
+
+.div8{
+    text-align: center;
+    margin-top: 10px;
+}
+.div8 p{
+    padding: 1px;
+    font-size: small;
+}
+
+.see-more-container{
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    border: 5px solid white;
+    margin: 0px 20% 0px;
+    color: white;
+    text-decoration: none;
+}
+.see-more-container:hover{
+    background-color: white;
+    color: black;
+}
+
+.resume-container{
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    border: 5px solid white;
+    margin: 25px 20% 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.resume-container:hover{
+    background-color: white;
+    color: black;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 15%;
+    padding: 5%;
+}
+
+.experience h2,h3,p{
+    margin-bottom: 0px;
+}
+
+.experience h2{
+    font-family: 'Pirata One', cursive;
+    font-size: 80px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form{
+    color: white;
+    margin: 30px;
+}
+
+.form input{
+    width: 300px;
+    height: 20px;
+    padding-top: 20px;
+    border-bottom: 5px solid white;
+    border-left: 0px solid white;
+    border-top: 0px solid white;
+    border-right: 0px solid white;
+    background-color: black;
+}
+
+.form-container a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+
+/*
+.div1-image{
+    margin: 80px 200px 50px 0px;
+}
+
+.div1-text{
+    margin: 0px 0px 0px 100px;
+    color: white;
+}
+
+.div1-text h1{
+    color: hotpink;
+    background-color: black;
+    font-family: 'Pirata One', cursive;
+    font-size: 70px;
+}
+*/
+
+/*
+.div1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+
+.text-inside-div1 {
+
+    color: white;
+}
+*/
+
