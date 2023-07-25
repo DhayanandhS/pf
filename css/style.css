@@ -228,7 +228,7 @@ nav a:hover{
     border-bottom: 5px solid white;
     /*border: 5px solid white;*/
     margin-top: 10px;
-    background-image: url("./images/monstera.png");
+    background-image: url("../../images/monstera.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -264,7 +264,7 @@ nav a:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: url("./images/plumeria.png");
+    background-image: url("../../images/plumeria.png");
     background-position: 50%;
     background-repeat: no-repeat;
 }
