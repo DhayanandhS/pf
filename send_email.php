@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = "Email: $email";
 
     // Replace 'your.email@gmail.com' with your email address
-    $to = 'your.email@gmail.com';
+    $to = 'dhayanandhs2003@gmail.com';
 
     if (mail($to, $subject, $message)) {
         echo 'Email sent successfully!';
