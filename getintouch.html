@@ -38,6 +38,20 @@
     </nav>
     <div class="form-container">
       <img src="./images/asteroid.png" alt="asteroid-img" />
+      <form action="send_email.php" method="post">
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <label for="message">Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br />
+        <input type="submit" value="Submit" />
+      </form>
     </div>
     <div style="margin-top: 250px" class="div7">
       <a
