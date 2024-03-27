@@ -149,6 +149,12 @@ nav a:hover {
     padding: 1px;
   }
 
+  .footer-link i:hover {
+    color: rgb(0, 0, 0);
+    background-color: hotpink;
+    transition: background-color 0.5s, color 0.5s;
+  }
+
   .see-more-container {
     margin: 0px 10% 0px !important;
   }
@@ -192,6 +198,13 @@ nav a:hover {
   .div4-right {
     height: 420px !important;
   }
+}
+
+.footer-link i:hover {
+  border: 4px;
+  color: hotpink !important;
+  background-color: rgb(0, 0, 0);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .div1-container {
@@ -269,7 +282,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-image: url('https://rawgithubusercontent.com/DhayanandhS/pf/blob/main/images/plumeria.png');
+  background-image: url('https://github.com/DhayanandhS/pf/blob/main/images/plumeria.png');
   background-position: 50%;
   background-repeat: no-repeat;
 }
