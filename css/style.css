@@ -297,9 +297,7 @@ nav a:hover {
   transition: 0.3s ease;
 }
 
-.div4-left:hover {
-  box-shadow: 3px 3px 9px hotpink;
-}
+
 
 .div4-right {
   margin: 20px 20px 20px 50px;
@@ -311,9 +309,7 @@ nav a:hover {
   transition: 0.3s ease;
 }
 
-.div4-right:hover {
-  box-shadow: 3px 3px 9px rgba(255, 255, 255, 0.911);
-}
+
 
 .div4 a {
   color: hotpink;
