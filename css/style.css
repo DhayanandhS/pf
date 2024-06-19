@@ -558,7 +558,7 @@ p {
   display: flex;
   position: absolute;
   width: 100%;
-  animation: marquee 8s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 
 .div-marquee .fa-java {
@@ -601,14 +601,27 @@ p {
 .div-marquee .marquee i {
   font-size: 50px;
   margin: 0 15px;
-   /* Change this to the desired color */
+  transition: font-size 0.4s ease;
+}
+
+.div-marquee .marquee i:hover {
+  font-size: 55px; /* Increase size on hover */
 }
 
 @keyframes marquee {
   0% {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    animation: marquee linear infinite;
     transform: translateX(100%);
   }
   100% {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    animation: marquee linear infinite;
     transform: translateX(-100%);
   }
+  
 }
