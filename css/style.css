@@ -129,20 +129,25 @@ nav a:hover {
     height: 150px !important;
   }
   .div4 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: column !important; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
   }
-
-  .div4-left {
-    margin-bottom: 30px;
+  
+  .div4-left, .div4-right {
+    width: 100% !important; /* Full width on smaller screens */
+    margin: 10px 0; /* Adjust margin for spacing */
   }
+  
   .div4-right {
-    margin-top: 30px;
+    margin-top: 0; /* Remove top margin on .div4-right */
   }
 
   .div6 {
-    margin: 10px 5%;
+    margin: 10px 3% !important;
+  }
+
+  .div6 p{
+    text-align: left;
   }
   /*
 
@@ -289,32 +294,30 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: max-content;
+  height: auto; /* Automatically adjust height */
   background-image: url('https://github.com/DhayanandhS/pf/images/plumeria.png');
   background-position: 50%;
   background-repeat: no-repeat;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.div4-left {
-  margin: 20px 30px 20px 20px;
-  height: 350px;
-  width: 400px;
-  padding: 5px;
+.div4-left, .div4-right {
+  margin: 20px;
+  width: 45%; /* Adjust width to fit flexbox layout */
+  padding: 20px;
   border: 5px solid white;
   background-color: black;
   transition: 0.3s ease;
+  color: white; /* Ensure text is visible on a black background */
+  box-sizing: border-box;
+  overflow: hidden; /* Hide overflow */
+  word-wrap: break-word; /* Ensure long words break appropriately */
 }
 
-
-
-.div4-right {
-  margin: 20px 20px 20px 50px;
-  height: 350px;
-  width: 400px;
-  padding: 5px;
-  border: 5px solid white;
-  background-color: black;
-  transition: 0.3s ease;
+.div4-titles {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 
@@ -354,6 +357,7 @@ nav a:hover {
   text-align: center;
   margin-bottom: 50px;
 }
+
 
 hr {
   color: white;
