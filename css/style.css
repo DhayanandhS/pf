@@ -5,6 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: black;
   color: white;
+  letter-spacing: 0.5px;
 }
 /* styles of navigation bar */
 nav {
@@ -288,6 +289,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  height: max-content;
   background-image: url('https://github.com/DhayanandhS/pf/images/plumeria.png');
   background-position: 50%;
   background-repeat: no-repeat;
@@ -422,13 +424,21 @@ hr {
   flex-direction: column;
   justify-content: center;
   margin: 0px 15%;
-  padding: 5%;
+  padding: 0% 5%;
 }
 
 .experience h2,
 h3,
 p {
+  margin-top: 5px;
   margin-bottom: 0px;
+}
+
+.experience h3:hover{
+  color: #E34F26;
+}
+.text-experience{
+  margin-top: 30px;
 }
 .text-experience:hover {
   color: hotpink;
