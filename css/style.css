@@ -39,12 +39,18 @@ nav a:hover {
   transition: background-color 0.5s, color 0.5s;
 }
 
+.getintouch {
+  border: 2px solid transparent;
+  padding: 4px;
+  color: rgb(255, 255, 255);
+  background-color: initial;
+  transition: border 0.3s, background-color 0.5s, color 0.5s;
+}
+
 .getintouch:hover {
   border: 2px solid hotpink;
-  padding: 4px;
   color: black;
   background-color: hotpink;
-  transition: background-color 0.5s, color 0.5s;
 }
 
 .menu-line {
