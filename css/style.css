@@ -119,6 +119,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    width: 92%;
   }
   .bird-img-on-phone {
     width: 50px;
@@ -155,10 +156,13 @@ nav a:hover {
 
   .div6 {
     margin: 10px 3% !important;
+    padding: 10px;
   }
 
   .div6 p{
-    text-align: left;
+    text-align: justify;
+    text-indent: 5px;
+    line-height: 1.5;
   }
   /*
 
@@ -292,7 +296,7 @@ nav a:hover {
   justify-content: center;
   flex-wrap: wrap;
   background-color: black;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 .div2-text {
@@ -481,6 +485,10 @@ hr {
 h3 {
   margin-top: 5px;
   margin-bottom: 0px;
+}
+
+.experience h3{
+  color: hotpink;
 }
 
 .experience p{
@@ -701,6 +709,7 @@ h3 {
 .certViewBtn{
   display: flex;
   justify-content: center;
+  width: 200px;
   height: 34.5px;
   font-size: medium;
   border: 5px solid white;

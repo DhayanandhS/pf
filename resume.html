@@ -42,14 +42,16 @@
         ><div>Download Resume PDF</div></a
       >
     </div>
+    <br>
     <div class="experience">
       <h2 class="text-experience">Experience</h2>
+      <br>
       <h3>GSSoC Open Source Contributor ▪ 2024</h3>
       <p>
         ✷ actively contributed to multiple open-source projects, identifying and resolving numerous bugs and enhancing the functionality and user experience of the projects.
       </p>
       <p>✷ engaged with a global community of developers, collaborating effectively with team members and project maintainers, and leveraging version control systems like Git and GitHub to manage contributions.
-      </p><hr>
+      </p><br>
       <h3>TANSAM Siemens ▪ 2024</h3>
       <p>
         ✷ developed dashboards using Python, PowerBI, SQL, and PostgreSQL for comprehensive car production data analysis.
@@ -63,43 +65,65 @@
         class="resume-container"
         href="./files/TANSAM.jpg"
         download
-        ><div>Download Certificate</div></a
+        ><div>Download</div></a
       >
       <!-- Trigger/Open The Modal -->
-<button id="viewCertBtn" class="certViewBtn">View Certificate</button>
+      <button class="certViewBtn" data-modal="modal1">View</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
+      <!-- The Modal 1 -->
+<div id="modal1" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <img src="./files/TANSAM.jpg" alt="Certificate" class="certificate-image">
+    <img src="./files/TANSAM.jpg" alt="Certificate 1" class="certificate-image">
   </div>
 </div>
 
-</div><hr>
+</div>
+<br>
       <h3>Intern at SAN TECH ▪ 2023</h3>
       <p>
         ✷ learnt basics of full-stack development, completed HTML and CSS. Also
         learnt the basics of Javascript.
       </p>
       <p>✷ designed this website as a task with the guidance of my mentor.</p>
+      <div class="cert-container">
       <a class="resume-container" href="./images/Dhayanandh  S.png" download
-        ><div>Download PDF</div></a
-      ><hr>
+        ><div>Download</div></a
+      >
+      <button class="certViewBtn" data-modal="modal3">View</button>
+      <!-- The Modal 3 -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="./files/san-tech.png" alt="Certificate 3" class="certificate-image">
+  </div>
+</div>
+</div>
+      <br>
       <h3>Coincent Program ▪ 2022</h3>
       <p>
         ✷ cyber security and ethical hacking online course got me a very clear
-        view of how VM runs and working of few tools in kali linux.
+        view of how VM runs and working of tools in kali linux.
       </p>
-      <p>✷ successfully completed tasks gien by mentor.</p>
+      <p>✷ successfully completed tasks given by mentor.</p>
+      <div class="cert-container">
       <a
         class="resume-container"
         href="./files/Dhayanandh_Jul_2022_participation_24647.pdf"
         download
-        ><div>Download PDF</div></a
-      ><hr>
+        ><div>Download</div></a
+      >
+      <button class="certViewBtn" data-modal="modal2">View</button>
+      <!-- The Modal 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="./files/coincent.png" alt="Certificate 2" class="certificate-image">
+  </div>
+</div>
+</div>
+
+      
     </div>
     <div style="bottom: 0px" class="div7">
       <a
@@ -136,29 +160,33 @@
       menuList.classList.toggle('showmenu');
     });
 
-    // Get the modal
-    var modal = document.getElementById("myModal");
+    // Get all the buttons that open the modals
+    var btns = document.querySelectorAll(".certViewBtn");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("viewCertBtn");
+    // Loop through the buttons to attach event listeners
+    btns.forEach(function(btn) {
+        btn.onclick = function() {
+            var modalId = this.getAttribute("data-modal");
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+        }
+    });
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    // Get all the close buttons
+    var spans = document.querySelectorAll(".close");
 
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
+    // Loop through the close buttons to attach event listeners
+    spans.forEach(function(span) {
+        span.onclick = function() {
+            var modal = this.closest(".modal");
+            modal.style.display = "none";
+        }
+    });
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = "none";
         }
     }
   </script>
