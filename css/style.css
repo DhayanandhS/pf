@@ -160,9 +160,9 @@ nav a:hover {
   }
 
   .div6 p{
-    text-align: justify;
-    text-indent: 5px;
-    line-height: 1.5;
+    text-align: justify !important;
+    text-indent: 5px !important;
+    line-height: 1.5 !important;
   }
   /*
 
