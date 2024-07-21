@@ -38,7 +38,7 @@
     </nav>
     <!-- remember in this resume we shoud use the download attribute to onlick download any file or image -->
     <div>
-      <a class="resume-container" href="./files/resume.pdf" download
+      <a class="resume-container-main" href="./files/resume.pdf" download
         ><div>Download Resume PDF</div></a
       >
     </div>
@@ -58,12 +58,27 @@
       <p>
         ✷ collaborated with a team of five members, leading to our project securing third place in a competitive evaluation.
       </p>
-      <a
+      <div class="cert-container">
+        <a
         class="resume-container"
         href="./files/TANSAM.jpg"
         download
         ><div>Download Certificate</div></a
-      ><hr>
+      >
+      <!-- Trigger/Open The Modal -->
+<button id="viewCertBtn" class="certViewBtn">View Certificate</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="./files/TANSAM.jpg" alt="Certificate" class="certificate-image">
+  </div>
+</div>
+
+</div><hr>
       <h3>Intern at SAN TECH ▪ 2023</h3>
       <p>
         ✷ learnt basics of full-stack development, completed HTML and CSS. Also
@@ -120,5 +135,31 @@
     menu.addEventListener('click', () => {
       menuList.classList.toggle('showmenu');
     });
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("viewCertBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
   </script>
 </html>
