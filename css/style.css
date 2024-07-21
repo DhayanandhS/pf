@@ -128,6 +128,9 @@ nav a:hover {
   .div2-text {
     text-align: center;
     padding: 0px 10px 0px 10px;
+    text-align: justify;
+    text-indent: 5px;
+    line-height: 1.5;
   }
   .div2-text p {
     width: 300px !important;
@@ -136,11 +139,14 @@ nav a:hover {
   .div4 {
     flex-direction: column !important; /* Stack items vertically on smaller screens */
     align-items: center; /* Center items horizontally */
+    
   }
   
   .div4-left, .div4-right {
     width: 100% !important; /* Full width on smaller screens */
     margin: 10px 0; /* Adjust margin for spacing */
+    overflow-y: scroll !important;
+    
   }
   
   .div4-right {
@@ -294,6 +300,9 @@ nav a:hover {
   height: 200px;
   margin-top: 40px;
   margin-left: 20px;
+  text-align: justify;
+    text-indent: 5px;
+    line-height: 1.5;
 }
 
 .div3 {
@@ -344,6 +353,9 @@ nav a:hover {
 
 .div4-left p {
   margin: 5px;
+  text-align: justify;
+    text-indent: 5px;
+    line-height: 1.5;
 }
 
 .see-more {
@@ -351,6 +363,9 @@ nav a:hover {
 }
 .div4-right p {
   margin: 5px;
+  text-align: justify;
+    text-indent: 5px;
+    line-height: 1.5;
 }
 
 .div4-titles {
@@ -441,6 +456,7 @@ hr {
 .resume-container {
   display: flex;
   justify-content: center;
+  width: 200px;
   height: 25px;
   border: 5px solid white;
   color: white;
@@ -747,5 +763,5 @@ h3 {
 .cert-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
