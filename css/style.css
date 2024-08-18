@@ -5,6 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: black;
   color: white;
+  font-size: 18px;
   letter-spacing: 0.5px;
 }
 /* styles of navigation bar */
@@ -55,20 +56,25 @@ nav a:hover {
 }
 
 .menu-line {
+  width: 100%;
   height: 3px;
-  width: 25px;
-  background-color: white;
-  margin-bottom: 5px;
+  background-color: #333;
+  transition: all 0.3s ease;
 }
 
 .menubar-container {
   cursor: pointer;
   display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
 }
 
 @media all and (max-width: 500px) {
   body {
     width: 100%;
+    font-size: 16px;
   }
   /* styles of navigation bar */
   nav {
@@ -106,6 +112,46 @@ nav a:hover {
     padding: 10px;
     
   }
+
+  /* Basic styles */
+.menubar-container {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
+}
+
+.menu-line {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Cross transformation */
+.menubar-container.active .menu-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menubar-container.active .menu-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menubar-container.active .menu-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Style for showing the menu (example) */
+ul.javacall {
+  display: none;
+}
+
+ul.javacall.showmenu {
+  display: block;
+}
+
   /* styles of div1 [bird,name]*/
 
   .div1-container {

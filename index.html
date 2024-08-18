@@ -179,8 +179,10 @@
   <script>
     const menu = document.querySelector('.menubar-container');
     const menuList = document.querySelector('nav ul');
+
     menu.addEventListener('click', () => {
-      menuList.classList.toggle('showmenu');
+    menuList.classList.toggle('showmenu');
+    menu.classList.toggle('active'); // Toggle the 'active' class for the cross effect
     });
   </script>
 </html>
